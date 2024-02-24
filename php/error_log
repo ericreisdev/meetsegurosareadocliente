@@ -1,0 +1,879 @@
+[13-Jan-2024 04:58:14 America/Fortaleza] PHP Warning:  Undefined array key "origin" in /home1/meetseguros/public_html/php/form-process.php on line 4
+[13-Jan-2024 04:58:14 America/Fortaleza] PHP Warning:  Undefined variable $Subject in /home1/meetseguros/public_html/php/form-process.php on line 22
+[13-Jan-2024 04:58:14 America/Fortaleza] PHP Warning:  Undefined variable $Body in /home1/meetseguros/public_html/php/form-process.php on line 22
+[13-Jan-2024 04:58:14 America/Fortaleza] PHP Warning:  Undefined array key "Email" in /home1/meetseguros/public_html/php/form-process.php on line 22
+[05-Feb-2024 12:21:09 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'code' in 'field list' in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT `code` F...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 12:21:38 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'code' in 'field list' in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT `code` F...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 12:21:40 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'code' in 'field list' in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT `code` F...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 15:25:47 America/Fortaleza] PHP Warning:  Undefined array key "nome" in /home1/meetseguros/public_html/php/consulta.php on line 23
+[05-Feb-2024 15:25:47 America/Fortaleza] PHP Warning:  Array to string conversion in /home1/meetseguros/public_html/php/consulta.php on line 23
+[05-Feb-2024 15:27:01 America/Fortaleza] PHP Warning:  Undefined array key "nome" in /home1/meetseguros/public_html/php/consulta.php on line 23
+[05-Feb-2024 15:27:01 America/Fortaleza] PHP Warning:  Array to string conversion in /home1/meetseguros/public_html/php/consulta.php on line 23
+[05-Feb-2024 15:33:02 America/Fortaleza] PHP Warning:  Undefined array key "nome" in /home1/meetseguros/public_html/php/consulta.php on line 23
+[05-Feb-2024 15:33:46 America/Fortaleza] PHP Warning:  Undefined array key "pontos" in /home1/meetseguros/public_html/php/consulta.php on line 23
+[05-Feb-2024 15:34:48 America/Fortaleza] PHP Warning:  Undefined array key "pontos" in /home1/meetseguros/public_html/php/consulta.php on line 23
+[05-Feb-2024 15:34:50 America/Fortaleza] PHP Warning:  Undefined array key "pontos" in /home1/meetseguros/public_html/php/consulta.php on line 23
+[05-Feb-2024 15:34:55 America/Fortaleza] PHP Warning:  Undefined array key "pontos" in /home1/meetseguros/public_html/php/consulta.php on line 23
+[05-Feb-2024 15:36:20 America/Fortaleza] PHP Warning:  Undefined array key "pontos" in /home1/meetseguros/public_html/php/consulta.php on line 23
+[05-Feb-2024 15:42:07 America/Fortaleza] PHP Warning:  Undefined array key "nome" in /home1/meetseguros/public_html/php/consulta.php on line 23
+[05-Feb-2024 16:01:09 America/Fortaleza] PHP Warning:  Undefined variable $pontos in /home1/meetseguros/public_html/php/consulta.php on line 23
+[05-Feb-2024 16:01:09 America/Fortaleza] PHP Warning:  Trying to access array offset on value of type null in /home1/meetseguros/public_html/php/consulta.php on line 23
+[05-Feb-2024 16:02:05 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 16:18:46 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'nome', ...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 16:21:41 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'nome', ...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 16:23:30 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'nome', ...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 16:25:07 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'nome', ...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 16:31:49 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 16:33:25 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 16:33:27 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 16:33:49 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 16:33:55 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 16:33:57 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 16:35:00 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 16:35:02 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 16:35:03 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 16:35:03 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 16:37:13 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 16:38:53 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 16:40:10 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 16:42:41 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 16:47:21 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 16:47:54 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 16:49:55 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 16:56:21 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 16:57:30 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 16:58:25 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 17:19:37 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 17:21:49 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 17:36:18 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 17:52:54 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 17:53:04 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 18:01:01 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 18:01:11 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 18:04:20 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 18:07:59 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 21:28:35 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 21:45:04 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'nome','...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 21:45:27 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'nome','...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 21:45:33 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'nome','...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 21:46:56 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'nome','...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 21:47:49 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'nome','...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 21:48:01 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '070.160.775-00'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'nome','...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 21:48:06 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '070.160.775-00'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'nome','...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 21:48:12 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '070.160.775-00'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'nome','...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 21:55:24 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'nome','...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 21:55:26 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'nome','...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 21:56:21 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'nome','...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 21:56:23 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'nome','...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 22:00:06 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 22:00:16 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 22:00:22 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '274.614.085-34'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 22:04:15 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 22:04:43 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '274.614.085-34'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 22:16:24 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'nome' F...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 22:19:03 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'nome' F...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 22:21:35 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 22:21:43 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '070.160.775-00'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 22:33:24 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 22:33:26 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 22:34:12 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 22:36:17 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 22:36:19 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 22:37:01 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 22:37:03 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 22:37:57 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 22:37:58 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 22:38:36 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 23:03:47 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 23:03:48 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 23:04:34 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 23:05:14 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 23:05:16 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 23:11:23 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 23:13:50 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 23:15:12 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 23:16:11 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 23:19:59 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 23:20:00 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 23:21:06 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 23:21:09 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 23:21:33 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 23:28:40 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 23:29:44 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 23:30:23 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 23:35:57 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 23:36:22 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 23:40:02 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 23:42:27 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 23:42:52 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 23:45:06 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '070.160.775-00'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[05-Feb-2024 23:47:03 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[06-Feb-2024 10:47:14 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[06-Feb-2024 10:47:17 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[06-Feb-2024 10:47:18 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[06-Feb-2024 10:48:02 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[06-Feb-2024 10:48:43 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[06-Feb-2024 10:49:30 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[06-Feb-2024 10:50:41 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[06-Feb-2024 10:50:59 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[06-Feb-2024 10:51:01 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[06-Feb-2024 10:51:20 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[06-Feb-2024 10:53:19 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[06-Feb-2024 10:55:42 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[06-Feb-2024 10:59:01 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[06-Feb-2024 11:00:47 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[06-Feb-2024 11:02:25 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[06-Feb-2024 11:02:27 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[06-Feb-2024 11:03:42 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[06-Feb-2024 11:03:52 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '070.160.775-00'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[06-Feb-2024 11:03:55 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '070.160.775-00'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[06-Feb-2024 11:07:17 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[06-Feb-2024 11:08:47 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[06-Feb-2024 11:09:39 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[06-Feb-2024 11:17:13 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[06-Feb-2024 11:19:11 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[06-Feb-2024 11:29:44 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[06-Feb-2024 11:29:49 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '070.160.775-00'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[06-Feb-2024 11:30:07 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '012.730.375-88'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[06-Feb-2024 11:31:01 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[06-Feb-2024 11:52:38 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[06-Feb-2024 11:53:16 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[06-Feb-2024 11:57:26 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[06-Feb-2024 11:57:30 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[06-Feb-2024 11:59:49 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[06-Feb-2024 11:59:49 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[06-Feb-2024 11:59:50 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[06-Feb-2024 11:59:50 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[06-Feb-2024 11:59:50 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[06-Feb-2024 12:01:22 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[06-Feb-2024 12:01:24 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[06-Feb-2024 12:01:24 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[06-Feb-2024 12:06:14 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[06-Feb-2024 12:09:26 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[06-Feb-2024 12:09:54 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[06-Feb-2024 12:11:28 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[06-Feb-2024 12:15:35 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[06-Feb-2024 12:16:38 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[06-Feb-2024 12:19:22 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[06-Feb-2024 12:32:30 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[06-Feb-2024 12:33:14 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[06-Feb-2024 12:43:19 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[06-Feb-2024 12:45:02 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[06-Feb-2024 15:23:44 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '274.614.085-34'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[06-Feb-2024 15:24:35 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[06-Feb-2024 15:24:58 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '274.614.085-34'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[06-Feb-2024 15:25:17 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '274.614.085-34'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[06-Feb-2024 16:40:02 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[06-Feb-2024 16:41:30 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[06-Feb-2024 16:47:34 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[06-Feb-2024 17:52:52 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '274.614.085-34'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[06-Feb-2024 18:29:07 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '274.614.085-34'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[06-Feb-2024 22:06:41 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[06-Feb-2024 22:58:37 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[06-Feb-2024 22:58:42 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[07-Feb-2024 13:12:01 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '070.160.775-00'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[07-Feb-2024 20:59:12 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[08-Feb-2024 07:31:52 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[08-Feb-2024 07:32:26 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[08-Feb-2024 17:50:33 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '070.160.775-00'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[09-Feb-2024 18:00:53 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '274.614.085-34'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[12-Feb-2024 22:54:20 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[14-Feb-2024 21:19:18 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '919.113.465-04'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[17-Feb-2024 14:40:45 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '274.614.085-34'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[17-Feb-2024 14:44:02 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = '274.614.085-34'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[17-Feb-2024 14:45:59 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE `id` = 274.614.085-34' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[17-Feb-2024 14:46:48 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE 'id' = 274.614.085-34' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[17-Feb-2024 14:47:19 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''promo' WHERE 'id' = '274.614.085-34'' at line 1 in /home1/meetseguros/public_html/php/consulta.php:13
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(13): mysqli_query(Object(mysqli), 'SELECT 'pontos'...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 13
+[17-Feb-2024 14:50:46 America/Fortaleza] PHP Warning:  Undefined array key "nome" in /home1/meetseguros/public_html/php/consulta.php on line 23
+[17-Feb-2024 14:50:46 America/Fortaleza] PHP Warning:  Undefined variable $variavel in /home1/meetseguros/public_html/php/consulta.php on line 23
+[17-Feb-2024 14:50:46 America/Fortaleza] PHP Fatal error:  Uncaught TypeError: mysqli_free_result(): Argument #1 ($result) must be of type mysqli_result, string given in /home1/meetseguros/public_html/php/consulta.php:26
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(26): mysqli_free_result(' - 150^')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 26
+[17-Feb-2024 14:51:26 America/Fortaleza] PHP Warning:  Undefined variable $variavel in /home1/meetseguros/public_html/php/consulta.php on line 23
+[17-Feb-2024 14:51:26 America/Fortaleza] PHP Fatal error:  Uncaught TypeError: mysqli_free_result(): Argument #1 ($result) must be of type mysqli_result, string given in /home1/meetseguros/public_html/php/consulta.php:26
+Stack trace:
+#0 /home1/meetseguros/public_html/php/consulta.php(26): mysqli_free_result('Aldo Campos Vie...')
+#1 {main}
+  thrown in /home1/meetseguros/public_html/php/consulta.php on line 26
+[17-Feb-2024 14:52:58 America/Fortaleza] PHP Warning:  Undefined variable $nome_pontos in /home1/meetseguros/public_html/php/consulta.php on line 23
+[17-Feb-2024 14:53:28 America/Fortaleza] PHP Warning:  Undefined variable $nome_pontos in /home1/meetseguros/public_html/php/consulta.php on line 23
+[17-Feb-2024 14:54:42 America/Fortaleza] PHP Warning:  Undefined variable $nome_pontos in /home1/meetseguros/public_html/php/consulta.php on line 23
+[17-Feb-2024 14:55:19 America/Fortaleza] PHP Warning:  Undefined variable $nome_pontos in /home1/meetseguros/public_html/php/consulta.php on line 23

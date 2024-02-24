@@ -1,0 +1,23 @@
+
+RewriteOptions inherit
+RewriteEngine On
+RewriteCond %{HTTP_HOST} meetseguros\.com\.br [NC]
+RewriteCond %{SERVER_PORT} 80
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^(.*)$ https://meetseguros.com.br/$1 [R,L]
+RewriteCond %{HTTP_HOST} ^meetseguros\.com\.br$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.meetseguros\.com\.br$
+RewriteRule ^renovafacilauto$ "https\:\/\/renovafacilautomeet\.bitrix24\.site\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^meetseguros\.com\.br$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.meetseguros\.com\.br$
+RewriteRule ^whatsapp$ "https\:\/\/api\.whatsapp\.com\/send\?1\=pt_BR\&phone\=55071989515000" [R=301,L]
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Defina o pacote “ea-php82” como a linguagem padrão de programação “PHP”.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php82___lsphp .php .php8 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit

@@ -1,0 +1,870 @@
+:root {
+	--primary-orange: #ef8f24;
+	--dark-orange: #d86608;
+	--custom-yellow: #ffc700;
+	--15-grey: #d8d8d8;
+	--30-grey: #b2b2b2;
+	--50-grey: #7f7f7f;
+	--70-grey: #4c4c4c;
+}
+
+body {
+	font-family: 'Oxygen', sans-serif !important;
+}
+
+.grey70 {
+	color: var(--70-grey) !important;
+}
+.grey50 {
+	color: var(--50-grey) !important;
+}
+.grey30 {
+	color: var(--30-grey) !important;
+}
+.porto-color {
+    background-color: orange !important;  
+}
+.orange-highlight {
+	color: var(--primary-orange) !important;
+	font-weight: bold;
+}
+.customer-header {
+	color: var(--primary-orange);
+	font-size: 0.7em;
+	padding-top: 30px;
+}
+.customer-header a {
+	padding-bottom: 10px;
+}
+
+.customer-header a:link{
+	text-decoration: none;
+}
+
+.orange-background {
+	background-color: var(--primary-orange)!important;
+}
+
+.text-orange {
+	color: var(--primary-orange)!important;
+}
+
+.text-dark-orange {
+	color: var(--dark-orange)!important;
+}
+
+.main-header {
+	height: 15em;
+	width: 100%;
+	z-index: 5;
+}
+
+#watermark {
+	position:absolute;
+	top: 0px;
+	right:5px;
+	max-width: 50%;
+	max-height: 10em; 
+	z-index:10;
+}
+
+.collapse-menu {
+	position: absolute;
+	z-index: 1000;
+	display: none;
+	margin-left: 55%;
+	width: 30%;
+	/*margin-top: 10px;*/
+}
+
+.home-title {
+	color: var(--primary-orange);
+	font-size: 2.5em;
+	letter-spacing: 2px;
+	margin-top: 0em;
+	margin-bottom: .5em;
+}
+
+.home-paragraph {
+	color: var(--70-grey);
+	font-size: 1.5em;
+	margin-bottom: 2em;
+}
+
+#collapseMenu > .nav-pills {
+	padding: 10px;
+	background-color: var(--50-grey);
+  
+}
+
+#collapseMenu > .nav-pills:last-child {
+	border-bottom-left-radius: 5px;
+  	border-bottom-right-radius: 5px;  
+
+}
+
+#collapseMenu > .nav-pills > .nav-item {	
+  	position: relative;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link{
+	background-color: var(--50-grey) !important;
+}
+
+#collapseMenu > .nav-pills > .nav-item > .nav-link.active{
+  color: var(--50-grey);
+  background-color: var(--70-grey) !important;
+
+}
+.logo{
+	float: left;
+	margin: 80px 10px 20px 0px;
+}
+
+.logo a > img {
+	max-height: 90px;
+}
+
+.logo-footer a > img {
+	max-height: 60px;
+}
+
+img.lazy {
+	opacity: 0;
+}
+
+img:not(.initial) {
+	transition: opacity 1s;
+}
+
+img.initial,
+img.loaded,
+img.error {
+	opacity: 1;
+}
+img:not([src]) {
+	visibility: hidden;
+}
+
+.logo-cert{
+	float: left;
+	margin: 40px 10px 20px 0px;
+}
+
+.logo-cert a > img {
+	max-height: 60px;
+	margin-left: 20px;
+}
+
+.header-item {
+	padding-top: 3.1em;
+	padding-left: 5px !important;
+	padding-right: 5px !important;
+}
+.header-item p {
+	font-size: 0.8em;
+}
+.header-item span {
+	font-size: 1.5em;
+}
+.header-item a {
+
+	color: white !important;
+	bottom: 0;
+}
+.header-item a:hover {
+	color: var(--primary-blue);
+	text-decoration: none;
+}
+
+.bg-navbar {
+	z-index: 20;
+	background-color: var(--30-grey);
+	padding: 0 !important;
+	font-size: 0.9em;
+}
+
+.navbar-nav {
+	padding: 5px !important;
+}
+
+.nav-link {
+	padding: 5px !important;
+}
+
+.hamburguer {
+  border: none;
+  background-color: transparent;
+  color: var(--custom-yellow);
+  font-size: 15vw;
+  /*margin-top: 25%;*/
+  z-index: 999;
+  position: relative;
+}
+
+
+.hamburguer:focus {
+  outline: none;  
+}
+
+
+.nav-item{
+	color: var(--15-grey);
+}
+
+.nav-item > a {
+	color: white;
+}
+
+.nav-item:hover {
+	background-color: var(--50-grey);
+}
+
+.nav-item > a:hover {
+	color: white;
+}
+
+.border-right {
+  border-right: 1px solid silver;
+}
+.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+.dropdown > .dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+}
+.dropdown-menu {
+	width: 100%;
+	border-top-right-radius: 0 !important; 
+	border-top-left-radius: 0 !important; 
+	margin-top: 0 !important;
+	padding-top: 0 !important;
+	border: none;
+}
+.dropdown-item {
+	background-color: var(--50-grey) !important;
+	border-bottom: 1px solid white !important;
+}
+
+.dropdown-menu > .nav-item:hover > .dropdown-item {
+	background-color: var(--70-grey) !important;
+}
+a.nav-link.dropdown-item {
+	border-radius: 0;
+}
+.gradient-bg{
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ad3113+0,f4a91d+100 */
+	background: #ad3113; /* Old browsers */
+	background: -moz-linear-gradient(45deg,  #ad3113 0%, #f4a91d 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(45deg,  #ad3113 0%,#f4a91d 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(45deg,  #ad3113 0%,#f4a91d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ad3113', endColorstr='#f4a91d',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.footer {
+	height: 100%;
+}
+.customer-logos{
+	margin: 5em 0 !important;
+}
+.footer-text {
+	color: var(--custom-yellow);
+	font-size: 1em;
+}
+
+.footer-text > p {
+	color: inherit !important;
+}
+.footer-icon {
+	color: white;
+	font-size: 2em;
+	margin-right: .5em;
+}
+.footer-icon:hover{
+	color: white;
+}
+.bottom-right {
+	position: absolute;
+	bottom: 0!important;
+	right: 0!important;
+}
+
+.seguro-product {
+	margin-bottom: 2em;
+}
+.seguro-product > p,
+.agendamento-main {
+	color: var(--70-grey);
+	padding-left: 15px;
+	padding-right: 15px;
+	font-size: 1em;
+
+}
+
+.product-container {
+	/*margin: 1em 0px;*/
+  	padding-bottom: 1.5em;
+  	position: relative;
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+}
+
+.product-btn-container{
+	padding-top: 30%;
+	padding-left: 10%;
+}
+
+.product-btn-container.fourbtn{
+	padding-top: 15%;
+
+}
+.product-title{
+	font-size: 2.5em;
+	letter-spacing: 2px;
+	color: var(--primary-orange);
+	margin-bottom: 0;
+}
+
+.product-subtitle {
+	font-size: 1.5em !important;
+	line-height: 1.1em;
+	color: var(--50-grey);
+	margin-bottom: 5px;
+}
+
+.product-btn,
+.seguro-page-btn {
+	width: 60%;
+	color: white;
+	font-size: 1.3em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-bottom: .5em;
+	background-color: var(--30-grey);
+	border-radius: 5em !important;
+}
+
+.product-btn:hover,
+.seguro-page-btn:hover {
+	background-color: var(--50-grey);
+}
+.seguro-page-btn.main,
+.product-btn.main{
+	background-color: var(--primary-orange) !important;
+}
+
+.product-btn.destak{
+	background-color: var(--custom-yellow) !important;
+}
+
+.product-btn.destak:hover{
+	background-color: var(--dark-orange) !important;
+}
+.seguro-page-btn.main:hover,
+.product-btn.main:hover{
+	background-color: var(--dark-orange) !important;
+}
+.circle-bullet {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-color: var(--primary-orange);
+}
+.form-control.form-msg {
+	height: 160px !important;
+	resize: none;
+}
+
+.sexy-line {
+    /*margin: 25px 10em;*/
+    height: 30px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffc700+0,f4a91d+100&1+0,0+100 */
+	background: -moz-linear-gradient(45deg,  rgba(255,199,0,1) 0%, rgba(244,169,29,0) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(45deg,  rgba(255,199,0,1) 0%,rgba(244,169,29,0) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(45deg,  rgba(255,199,0,1) 0%,rgba(244,169,29,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffc700', endColorstr='#00f4a91d',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+/*ONLINE*/
+
+.online-sexy-line {
+    /*margin: 25px 10em;*/
+    height: 30px;
+}
+c
+#online-logo {
+	width: 75%;
+}
+.online-page-btn {
+	color: white;
+	font-size: 1.3em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	border-radius: 30px;
+	margin-bottom: .5em;
+	background-color: var(--50-grey);
+	border-radius: 5em !important;
+}
+.online-product-title{
+	font-size: 2.5em;
+	letter-spacing: 2px;
+	color: #000000;
+	margin-bottom: 0;
+}
+
+.online-product-subtitle {
+	font-size: 1.5em !important;
+	font-weight: 300;
+	color: #226A54;
+	margin-bottom: 5px;
+}
+.online-product-btn {
+	font-size: 1.3em !important;
+	background-color: #226A54;
+	color: white;
+	margin-bottom: 5px;
+	text-transform: uppercase;
+	border-radius: 5em !important;
+}
+#online-circle-container{
+	width: 85%;
+	margin:1% auto;
+	overflow: hidden;
+}
+
+/*circles*/
+.circles {
+	opacity: 0;
+	float: left;
+	border-radius: 100px;
+	margin: 3px 3%;
+	height: 40px;
+	width: 40px;
+}
+/*.dropdown-item:active {
+	background-color: var(--primary-blue) !important;
+}
+*/
+
+/* AGENDAMENTO */
+.form-check {
+	margin-left: 3em;
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	font-size: 1.5em;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.form-check-label {
+	margin-left: 1em;
+}
+
+/* Hide the browser's default checkbox */
+.form-check input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+/*  custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: var(--30-grey);
+  border-radius: 50%;
+}
+
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.form-check input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.form-check .checkmark:after {
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--70-grey);
+}
+
+.form-segurado {
+	margin-left: 4em;
+}
+.form-vencimento {
+	margin-left: 4em;
+}
+
+.section-bigtext{
+	color: var(--50-grey);
+	text-align: center;
+	font-size: 2.5em;
+	margin-top: 2em;
+}
+
+.section-midtext{
+	color: var(--50-grey);
+	text-align: center;
+	font-size: 1.5em;
+	margin: 2em 0;
+}
+
+/* SEGURO PAGES*/
+.seguro-page-title {
+	color: var(--primary-orange);
+	letter-spacing: 3px;
+}
+.seguro-page-text {
+	font-size: 1em;
+	color: var(--50-grey);
+	margin-left: 2em;
+	margin-right: 2em;
+}
+.seguro-page-text > p {
+	margin-bottom: .2em;
+}
+.diversos-field {
+	margin-left: 3em;
+	padding-left: 1.25em;
+	display: none;
+}
+.seguro-page-btn {
+	width: 60%;
+	color: white;
+	font-size: 1.3em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	border-radius: 30px;
+	margin-bottom: .5em;
+	background-color: var(--30-grey);
+	border-radius: 5em !important;
+	max-height: 30px;
+}
+.grey-sexy-line {
+    height: 2px;
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b2b2b2+0,707070+87&1+0,0+87 */
+	background: -moz-linear-gradient(45deg,  rgba(178,178,178,1) 0%, rgba(112,112,112,0) 87%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(45deg,  rgba(178,178,178,1) 0%,rgba(112,112,112,0) 87%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(45deg,  rgba(178,178,178,1) 0%,rgba(112,112,112,0) 87%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b2b2b2', endColorstr='#00707070',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+/*ABOUT+CONTACT*/
+.about-text {
+	color: var(--50-grey);
+}
+.about-text > h3 {
+	font-size: 1.5em;
+}
+.about-text > p {
+	font-size: 1em;
+}
+.btn-form {
+	background-color: var(--primary-orange);
+	border-radius: 30px !important;
+	color: white;
+	width: 20%;
+}
+.contact-smalltext{
+	font-size: 1em;
+	color: var(--50-grey);
+}
+.contact-bigtext{
+	font-size: 1.5em;
+	font-weight: bold;
+	color: var(--50-grey);	
+}
+.gmap_canvas > iframe {
+	width: 100%;
+	height: 30vh;
+}
+.contact-icon {
+	font-size: 2em;
+	color: var(--primary-orange);
+	margin-left: .5em;
+}
+@media screen and (max-width: 1200px){
+	.product-row {
+		margin-left: 1em !important;
+		margin-right: 1em !important;
+	}
+	.contact-info > h5 {
+		font-size: .9em;
+	}
+	.product {
+		max-width: 50%
+	}
+
+	.home-bot-logo {
+		max-height: 3.5em;
+	}
+	.circles {
+		height: 25px;
+		width: 25px;
+	}
+	#online-logo {
+		width: 95% !important;
+	}
+
+}
+
+@media screen and (max-width: 998px){
+	.logo a > img {
+		max-height: 70px;
+		margin-top: 20px;
+	}
+
+	.dropdown-item {
+		font-size: 0.8em;
+	}
+	.product-btn,
+	.seguro-page-btn,
+	.online-product-btn {
+		font-size: 1em !important;
+	}
+}
+@media screen and (max-width: 767px){
+	.product-title,
+	.online-product-title {
+		font-size: 1.8em;
+	}
+
+	.product-subtitle,
+	.online-product-subtitle {
+		font-size: 1em !important;
+		line-height: 1.3em;
+	}
+	.product-container {
+		margin: .7em 0px;
+	}
+
+	.main-header {
+		height: 12em;
+	}
+
+	.logo {
+		margin-top: 70px;
+	}
+
+	.logo a > img {
+		max-height: 70px;
+		margin-top: 20px;
+	}
+
+	.logo.logo-footer {
+		margin-top: 30px;
+	}
+
+	.logo.logo-footer a > img {
+		max-height: 40px;
+	}
+
+	.product-btn-container {
+		/*padding-top: 10%; */
+	}
+
+	.product-btn ,
+	.online-product-btn	{
+		font-size: .8em !important;
+		width: 70%;
+	}
+
+	.seguro-page-btn {
+		font-size: .7em !important;
+		width: 75%;
+	}
+	.section-bigtext {
+		font-size: 2em;
+	}
+	.form-check,
+	.form-head {
+		font-size: 1em;
+	}
+	.contact-bigtext {
+		font-size: 1.2em !important;
+	}
+}
+@media screen and (max-width: 576px){
+
+	.circles {
+		height: 20px;
+		width: 20px;
+	}
+	.collapse-menu {
+		width: 40%;
+	}
+
+    .product {
+ 		max-width: 150px!important;
+	}
+	.about-text > h3 {
+		font-size: 1.5em;
+	}
+    .logo a > img {
+		margin-top: 5px;
+	}
+
+	#mobile-header {
+		height: 90px;
+	}
+
+	#collapseMenu > .nav-pills > .nav-item > .nav-link {
+		font-size: .8em;
+	}
+	.dropdown-item {
+		font-size: .8em;
+	}
+	.product-container {
+		padding-bottom: 0
+	}
+	.section-bigtext {
+		font-size: 1.5em;
+	}
+
+	.form-check,
+	.form-head > h4{
+		font-size: 1em;
+	}
+	.form-control {
+		font-size: .8em !important;
+	}
+}
+
+@media screen and (max-width: 535px){
+	.logo a > img {
+		max-height: 65px;
+		margin-top: 0px;
+	}
+
+	.home-title {
+		font-size: 1.5em;
+	}
+
+	.agendamento-main {
+		font-size: .8em;
+	}
+	.home-paragraph, 
+	.seguro-product > p {
+		font-size: 1.2em;
+	}
+
+	.seguro-page-title {
+		font-size: 1.5em;
+	}
+	.seguro-product {
+		margin-bottom: 1.5em;
+	}
+}
+@media screen and (max-width: 472px){
+	.logo a > img {
+		max-height: 60px;
+		margin-top: 5px;
+	}
+
+	.dropdown-item {
+		font-size: .6em;
+	}
+
+	.product-title{
+		font-size: 1.5em;
+	}
+	.product-btn {
+		font-size: .7em !important;
+		width: 80%;
+	}
+
+	.home-paragraph, 
+	.seguro-product > p {
+		font-size: 1em;
+	}
+
+	.seguro-page-title {
+		font-size: 1.2em;
+	}
+
+	.form-check {
+		margin-left: 0em;
+	}
+}
+
+@media screen and (max-width: 435px){
+	.logo a > img {
+		max-height: 55px;
+		margin-top: 5px;
+	}
+	.main-header {
+    	height: 10em;
+	}
+	.btn.btn-form {
+		width: 40% !important;
+	}
+	.contact-bigtext {
+		font-size: 1em !important;
+	}
+}
+@media screen and (max-width: 399px){
+	.logo a > img {
+		max-height: 45px;
+		margin-top: 10px;
+	}
+
+	.form-control {
+		font-size: .6em !important;
+	}
+
+	.product-btn {
+		font-size: .5em !important;
+		width: 80%;
+	}
+	.seguro-page-btn {
+		font-size: .5em !important;
+		font-weight: bold;
+		width: 100%;
+	}
+	.seguro-page-title {
+		font-size: 1em;
+	}
+	.product-title{
+		font-size: 1.2em;
+	}
+}
+
+@media screen and (max-width: 325px){
+	.logo a > img {
+		max-height: 45px;
+		margin-top: 10px;
+	}
+
+
+	.about-text > h3 {
+		font-size: 1.25em;
+	}
+	.seguro-page-title {
+		font-size: .8em;
+	}
+	.product-btn {
+		font-size: .5em !important;
+		width: 100%;
+	}
+}
