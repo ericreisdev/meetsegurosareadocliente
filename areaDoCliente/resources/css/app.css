@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[x-cloak] {
+    display: none;
+}
+
+:root {
+    --primary-orange: #ef8f24;
+    --dark-orange: #d86608;
+    --custom-yellow: #ffc700;
+    --15-grey: #d8d8d8;
+    --30-grey: #b2b2b2;
+    --50-grey: #7f7f7f;
+    --70-grey: #4c4c4c;
+    /* ... outros estilos ... */
+}
