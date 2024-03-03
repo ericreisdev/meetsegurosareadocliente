@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ClienteController; // Lembre-se de importar o controlador
@@ -18,22 +18,26 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// Rotas protegidas por autenticação
-Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified'])->group(function () {
-    // Dashboard do cliente
+
+Route::middleware(['auth:sanctum', 'verified'])->group(function () {
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
 
-    // Rota para o perfil do cliente
+    // Rotas para clientes
     Route::get('/area-do-cliente/perfil', [ClienteController::class, 'perfil'])->name('cliente.perfil');
-    Route::post('/area-do-cliente/atualizar-perfil', [ClienteController::class, 'atualizarPerfil'])->name('cliente.atualizarPerfil');
-    Route::get('/area-do-cliente/editar-perfil', [ClienteController::class, 'editarPerfil'])->name('cliente.editarPerfil');
+    Route::get('/area-do-cliente/apolices', [ClienteController::class, 'apolices'])->name('cliente.apolices');
 
-
-    // Outras rotas da área do cliente podem ser adicionadas aqui
-    // Por exemplo: Route::get('/area-do-cliente/minhas-compras', [ClienteController::class, 'minhasCompras'])->name('cliente.minhasCompras');
+    // Rotas para administradores
+    Route::middleware(['isAdmin'])->group(function () {
+        Route::get('/admin/painel', [AdminController::class, 'painel'])->name('admin.painel');
+        Route::get('/admin/editar-usuario/{id}', [AdminController::class, 'editarUsuario'])->name('admin.editarUsuario');
+        // Adicione mais rotas de administração conforme necessário
+    });
 });
-
 // Você pode adicionar outras rotas web gerais aqui, se necessário
 // C:\laragon\www\public_html\areaDoCliente\routes\web.php
+
+
+
+ 
