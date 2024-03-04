@@ -1,12 +1,27 @@
 <x-app-layout>
     <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Meet Seguros') }}
-        </h2>
+        <div class="cabecalho">
+            @if (Route::has('login'))
+                <div>
+                    @auth
+                        <a href="{{ url('/dashboard') }}">Dashboard</a>
+                    @else
+                        <a href="{{ route('login') }}" class="botao">Entrar</a>
+                        @if (Route::has('register'))
+                            <a href="{{ route('register') }}" class="botao">Registrar</a>
+                        @endif
+                    @endauth
+                </div>
+            @endif
+        </div>
     </x-slot>
 
-    <div class="py-12" style="background-color: var(--15-grey);">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+    <div class="container max-w-7xl mx-auto p-6 lg:p-8">
+        <div class="flex justify-center">
+            <img src="{{ asset('images/meet_logo.png') }}" alt="Meet Seguros Logo" class="h-16 w-auto">
+        </div>
+
+        <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg p-6">
                 <h3 class="text-lg text-dark-orange">Olá, {{ Auth::user()->full_name }}</h3>
                 <p class="text-grey-500">CPF/CNPJ: {{ Auth::user()->username }}</p>
@@ -20,7 +35,12 @@
             </div>
         </div>
     </div>
+
+    <div class="rodape">
+        © 2024 Meet Seguros. Todos os direitos reservados.
+    </div>
 </x-app-layout>
+
 
 
 <!-- C:\laragon\www\public_html\areaDoCliente\resources\views\dashboard.blade.php -->
