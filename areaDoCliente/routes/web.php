@@ -2,6 +2,7 @@
 
         use Illuminate\Support\Facades\Route;
         use App\Http\Controllers\ClienteController; // Lembre-se de importar o controlador
+        use App\Http\Controllers\AdminController;
 
         /*
 |--------------------------------------------------------------------------
@@ -23,15 +24,18 @@
             Route::get('/dashboard', function () {
                 return view('dashboard');
             })->name('dashboard');
-
+        
             // Rotas para clientes
             Route::get('/area-do-cliente/perfil', [ClienteController::class, 'perfil'])->name('cliente.perfil');
             Route::get('/area-do-cliente/apolices', [ClienteController::class, 'apolices'])->name('cliente.apolices');
-
-            // Rotas para administradores
-            Route::get('/admin/painel', [AdminController::class, 'painel'])->name('admin.painel');
-            Route::get('/admin/editar-usuario/{id}', [AdminController::class, 'editarUsuario'])->name('admin.editarUsuario');
-            Route::put('/admin/atualizar-usuario/{id}', [AdminController::class, 'atualizarUsuario'])->name('admin.atualizarUsuario');
-        });
-// Você pode adicionar outras rotas web gerais aqui, se necessário
+        
+            Route::middleware(['isAdmin'])->group(function () {
+                Route::get('/admin/painel', [AdminController::class, 'painel'])->name('admin.painel');
+                Route::get('/admin/editar-usuario/{id}', [AdminController::class, 'editarUsuario'])->name('admin.editarUsuario');
+                Route::put('/admin/atualizar-usuario/{id}', [AdminController::class, 'atualizarUsuario'])->name('admin.atualizarUsuario');
+                // Adicione aqui outras rotas de administração conforme necessário
+            });
+        }); // Certifique-se de que esta chave fecha o grupo de middleware 'auth:sanctum', 'verified'
+        
+        // Você pode adicionar outras rotas web gerais aqui, se necessário
 // C:\laragon\www\public_html\areaDoCliente\routes\web.php
