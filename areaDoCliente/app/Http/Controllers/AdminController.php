@@ -3,14 +3,21 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\User; // Importe o modelo User se você precisar acessar informações do usuário
+use App\Models\User;
+use App\Models\Apolice;
+use Illuminate\Support\Facades\Storage;
 
 class AdminController extends Controller
 {
     // Método para mostrar o painel do administrador
+
     public function painel()
     {
-        return view('admin.painel'); // Retorna a view do painel do administrador
+        // Buscar todas as apólices
+        $apolices = Apolice::all(); // Ou qualquer outra lógica para buscar as apólices
+
+        // Passar as apólices para a view
+        return view('admin.painel', compact('apolices'));
     }
 
     // Método para mostrar o formulário de edição de perfil do usuário
@@ -21,16 +28,96 @@ class AdminController extends Controller
     }
 
     // Método para atualizar o perfil do usuário
-    public function atualizarUsuario(Request $request, $id)
+    public function atualizarApolice(Request $request, $id)
     {
-        $user = User::findOrFail($id);
+        $validatedData = $request->validate([
+            // Validação dos campos
+            'tipo' => 'required|string',
+            'valor_segurado' => 'required|numeric',
+            'nome_segurado' => 'required|string',
+        ]);
+    
+        $apolice = Apolice::findOrFail($id);
+        $apolice->update($validatedData);
+    
+        return redirect()->route('admin.painel')->with('success', 'Apólice atualizada com sucesso!');
+    }
+    
 
-        // Adicione aqui a lógica de validação e atualização dos dados do usuário
+    // Novos métodos para gerenciamento de apólices
 
-        $user->save(); // Salva as mudanças no usuário
+    public function inserirApolice(Request $request)
+    {
+        // Validação dos dados da apólice
+        $validatedData = $request->validate([
+            'tipo' => 'required|string',
+            'valor_segurado' => 'required|numeric',
+            'nome_segurado' => 'required|string',
+            // Outras validações conforme necessário
+        ]);
 
-        return redirect()->route('admin.painel')->with('success', 'Perfil de usuário atualizado com sucesso!');
+        Apolice::create($validatedData);
+
+        return redirect()->route('admin.painel')->with('success', 'Apólice inserida com sucesso!');
     }
 
-    // Aqui, você pode adicionar outros métodos conforme necessário
+    public function uploadPdf(Request $request, $apoliceId)
+    {
+        $apolice = Apolice::findOrFail($apoliceId);
+
+        // Validação do arquivo PDF
+        $request->validate(['pdf' => 'required|file|mimes:pdf']);
+
+        // Armazenamento do arquivo
+        if ($request->hasFile('pdf')) {
+            $pdfPath = $request->file('pdf')->store('apolices', 'public'); // Especificar o disco se necessário
+            $apolice->pdf_path = $pdfPath;
+            $apolice->save();
+        }
+
+        return redirect()->route('admin.painel')->with('success', 'PDF da apólice atualizado com sucesso!');
+    }
+    public function excluirApolice($id)
+    {
+        $apolice = Apolice::findOrFail($id);
+    
+        // Verifique se o caminho do arquivo PDF existe antes de tentar deletar
+        if ($apolice->pdf_path) {
+            Storage::disk('public')->delete($apolice->pdf_path);
+        }
+    
+        $apolice->delete();
+    
+        return redirect()->route('admin.painel')->with('success', 'Apólice excluída com sucesso!');
+    }
+
+    public function gerenciarDocumentos(Request $request, $apoliceId)
+    {
+        $apolice = Apolice::findOrFail($apoliceId);
+        // Implementação do gerenciamento de documentos
+        // ...
+
+        return redirect()->route('admin.painel')->with('success', 'Documentos da apólice gerenciados com sucesso!');
+    }
+    public function mostrarInserirApolice()
+    {
+        return view('admin.inserirApolice');
+    }
+    
+    public function mostrarUploadPdf($apoliceId)
+    {
+        $apolice = Apolice::findOrFail($apoliceId);
+        return view('admin.uploadPdf', compact('apolice'));
+    }
+
+    public function editarApolice($id)
+{
+    $apolice = Apolice::findOrFail($id);
+    // Retorne a view de edição, passando a apólice como dado
+    return view('admin.editarApolice', compact('apolice'));
 }
+
+
+    // Outros métodos conforme necessário
+}
+// C:\laragon\www\public_html\areaDoCliente\app\Http\Controllers\AdminController.php
