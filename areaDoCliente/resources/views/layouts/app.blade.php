@@ -47,4 +47,4 @@
         @livewireScripts
     </body>
 </html>
-<!-- //C:\laragon\www\public_html\areaDoCliente\resources\views\layouts\app.blade.php -->
+<!-- C:\laragon\www\public_html\areaDoCliente\resources\views\layouts\app.blade.php -->

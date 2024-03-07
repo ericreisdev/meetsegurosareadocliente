@@ -6,7 +6,9 @@
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
                     <a href="{{ route('dashboard') }}">
-                        <img src="{{ asset('images/logo.png') }}" alt="Meet Seguros" class="block h-9 w-auto" />
+                    <img src="{{ asset('images/logo.png') }}" alt="Meet Seguros" class="block h-9 w-auto" />
+
+
                     </a>
                     </a>
                     </a>
@@ -217,3 +219,5 @@
         </div>
     </div>
 </nav>
+
+<!-- C:\laragon\www\public_html\areaDoCliente\resources\views\navigation-menu.blade.php -->

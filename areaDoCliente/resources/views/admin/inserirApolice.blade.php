@@ -14,9 +14,18 @@
                     <input type="text" name="tipo" placeholder="Tipo de Seguro" required>
                     <input type="number" name="valor_segurado" placeholder="Valor Segurado" required>
                     <input type="text" name="nome_segurado" placeholder="Nome do Segurado" required>
+
+                    <select name="user_id">
+       @foreach ($users as $user)
+           <option value="{{ $user->id }}">{{ $user->full_name }}</option>
+       @endforeach
+   </select>
                     <button type="submit" class="btn btn-primary">Salvar Apólice</button>
                 </form>
             </div>
+
+         
+   
         </div>
     </div>
 </x-app-layout>

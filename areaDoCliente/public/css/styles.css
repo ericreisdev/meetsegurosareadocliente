@@ -1,0 +1,47 @@
+/* C:\laragon\www\public_html\areaDoCliente\public\css\styles.css */
+
+/* Estilo para links com sublinhado ao passar o mouse */
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para botões com efeito de hover */
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #ef8f24; /* Cor primária laranja */
+    color: black;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #d86608; /* Cor laranja escura ao passar o mouse */
+}
+
+/* Estilo para botões secundários com efeito de hover */
+.btn-secondary {
+    background-color: #ffc700; /* Cor amarela personalizada */
+}
+
+.btn-secondary:hover {
+    background-color: #b3a700; /* Cor amarela escura ao passar o mouse */
+}
+
+/* Estilo para botões perigosos com efeito de hover */
+.btn-danger {
+    background-color: #f44336; /* Vermelho */
+}
+
+.btn-danger:hover {
+    background-color: #d32f2f; /* Vermelho escuro ao passar o mouse */
+}
+
+
+.expanded-table {
+    max-width: 100%; /* Aumenta a largura máxima para ocupar a tela inteira */
+    padding: 0 15px; /* Adiciona um pouco de preenchimento nas laterais */
+}

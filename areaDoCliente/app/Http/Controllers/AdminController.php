@@ -53,6 +53,7 @@ class AdminController extends Controller
             'tipo' => 'required|string',
             'valor_segurado' => 'required|numeric',
             'nome_segurado' => 'required|string',
+            'user_id' => 'required|exists:users,id' // Garanta que este campo está validado
             // Outras validações conforme necessário
         ]);
 
@@ -100,9 +101,10 @@ class AdminController extends Controller
         return redirect()->route('admin.painel')->with('success', 'Documentos da apólice gerenciados com sucesso!');
     }
     public function mostrarInserirApolice()
-    {
-        return view('admin.inserirApolice');
-    }
+{
+    $users = User::all(); // Busca todos os usuários
+    return view('admin.inserirApolice', compact('users'));
+}
     
     public function mostrarUploadPdf($apoliceId)
     {

@@ -2,13 +2,16 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Apolice;
+use Illuminate\Support\Facades\Auth;
 
 class ClienteController extends Controller
 {
     // Método para mostrar a página de perfil do cliente
     public function perfil()
     {
-        return view('cliente.perfil'); // Retorna a view de perfil
+        $apolices = Apolice::where('user_id', auth()->id())->get();
+        return view('cliente.perfil', compact('apolices')); // Retorna a view de perfil
     }
 
     // Aqui, você pode adicionar outros métodos para as demais rotas
@@ -33,6 +36,15 @@ class ClienteController extends Controller
     public function editarPerfil()
 {
     return view('cliente.editarPerfil'); // Certifique-se de que esta view exista
+}
+
+
+public function apolices()
+{
+    $userId = Auth::id(); // Obtém o ID do usuário logado
+    $apolices = Apolice::where('user_id', $userId)->get(); // Busca as apólices associadas ao usuário
+
+    return view('cliente.apolices', compact('apolices')); // Passa as apólices para a view
 }
 
 }
