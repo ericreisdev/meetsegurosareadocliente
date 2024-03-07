@@ -1,5 +1,14 @@
 {{-- resources/views/admin/painel.blade.php --}}
 
+<head>
+    <!-- Outros meta tags e declarações aqui -->
+
+    <!-- Referência ao arquivo CSS -->
+    <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
+    
+    <!-- Outros scripts e estilos aqui -->
+</head>
+
 
 <x-app-layout>
     <x-slot name="header">
@@ -9,19 +18,13 @@
     </x-slot>
 
     <div class="py-12">
-        <!-- ... Conteúdo ... -->
-        <a href="{{ route('admin.mostrarInserirApolice') }}" class="btn btn-primary">Inserir Nova Apólice</a>
-
-
-
-
-        <!-- Outros botões conforme necessário -->
+        <a href="{{ route('admin.mostrarInserirApolice') }}" class="btn">Inserir Nova Apólice</a>
     </div>
 
-    <div class="py-12">
+    <div class="py-12 expanded-table"> 
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
-                <p>Bem-vindo ao painel do administrador!</p>
+                <h1>Bem-vindo ao painel do administrador!</h1>
 
                 <!-- Tabela de apólices -->
                 <!-- Tabela de apólices -->
@@ -37,33 +40,37 @@
                     <tbody>
                         @foreach ($apolices as $apolice)
                         <tr>
-                            <td class="border px-4 py-2">{{ $apolice->tipo }}</td>
-                            <td class="border px-4 py-2">{{ $apolice->valor_segurado }}</td>
-                            <td class="border px-4 py-2">{{ $apolice->nome_segurado }}</td>
-                            <td class="border px-4 py-2">
-                                @if ($apolice->pdf_path)
-                                <a href="{{ asset('storage/' . $apolice->pdf_path) }}" target="_blank">Baixar Apólice</a>
-                                @else
-                                Nenhuma apólice encontrada
-                                @endif
-                            </td>
-                            <td class="border px-4 py-2">
-                                <a href="{{ route('admin.editarApolice', $apolice->id) }}" class="btn btn-primary">Editar</a>
-                                <a href="{{ route('admin.mostrarUploadPdf', $apolice->id) }}" class="btn btn-secondary">Upload PDF</a>
-                                <form action="{{ route('admin.excluirApolice', $apolice->id) }}" method="POST" onsubmit="return confirm('Tem certeza que deseja excluir esta apólice?');">
-                                    @csrf
-                                    @method('DELETE')
-                                    <button type="submit" class="btn btn-danger">Excluir</button>
-                                </form>
-                            </td>
-                        </tr>
+    <td class="border px-4 py-2">{{ $apolice->tipo }}</td>
+    <td class="border px-4 py-2">R$ {{ number_format($apolice->valor_segurado, 2, ',', '.') }}</td>
+    <td class="border px-4 py-2">{{ $apolice->nome_segurado }}</td>
+    <td class="border px-4 py-2">
+        @if ($apolice->pdf_path)
+        <a href="{{ asset('storage/' . $apolice->pdf_path) }}" target="_blank">Baixar Apólice</a>
+        @else
+        Nenhuma apólice encontrada
+        @endif
+    </td>
+    <td class="border px-4 py-2">
+        <a href="{{ route('admin.editarApolice', $apolice->id) }}" class="btn btn-primary">Editar</a>
+        <br><br>
+        <a href="{{ route('admin.mostrarUploadPdf', $apolice->id) }}" class="btn btn-secondary">Upload PDF</a>
+        <br><br>
+        <form action="{{ route('admin.excluirApolice', $apolice->id) }}" method="POST" onsubmit="return confirm('Tem certeza que deseja excluir esta apólice?');">
+            @csrf
+            @method('DELETE')
+            <button type="submit" class="btn btn-danger">Excluir</button>
+        </form>
+    </td>
+</tr>
                         @endforeach
                     </tbody>
                 </table>
             </div>
         </div>
     </div>
-
+    <div style="position: fixed; bottom: 0; width: 100%; height: 50px; background-color: #333; color: white; text-align: center; line-height: 50px; z-index: 999;">
+    © 2024 Meet Seguros. Todos os direitos reservados.
+</div>
 
 
 </x-app-layout>

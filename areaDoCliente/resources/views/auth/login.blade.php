@@ -2,7 +2,7 @@
     <x-authentication-card>
         <x-slot name="logo">
             <div class="flex justify-center mb-4">
-                <img src="{{ asset('images/meet_logo.png') }}" alt="Meet Seguros Logo" class="h-16 w-auto">
+                <img src="{{ asset('images/logo.png') }}" alt="Meet Seguros Logo" class="h-16 w-auto">
             </div>
         </x-slot>
 

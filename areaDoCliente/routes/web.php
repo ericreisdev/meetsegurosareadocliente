@@ -28,6 +28,8 @@
             // Rotas para clientes
             Route::get('/area-do-cliente/perfil', [ClienteController::class, 'perfil'])->name('cliente.perfil');
             Route::get('/area-do-cliente/apolices', [ClienteController::class, 'apolices'])->name('cliente.apolices');
+            
+           
 
             Route::middleware(['isAdmin'])->group(function () {
                 Route::get('/admin/painel', [AdminController::class, 'painel'])->name('admin.painel');

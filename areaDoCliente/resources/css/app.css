@@ -16,3 +16,32 @@
     --70-grey: #4c4c4c;
     /* ... outros estilos ... */
 }
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.wrapper {
+    min-height: 100%;
+    /* Igual à altura do rodapé */
+    margin-bottom: -50px; 
+}
+
+.wrapper:after {
+    content: "";
+    display: block;
+    height: 50px; /* Altura do rodapé */
+}
+
+.rodape {
+    height: 50px;
+    background-color: #333; /* Ou a cor que preferir */
+    color: white;
+    text-align: center;
+    line-height: 50px; /* Centraliza verticalmente o texto no rodapé */
+}
+
+
+/* C:\laragon\www\public_html\areaDoCliente\resources\css\app.css */

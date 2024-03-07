@@ -43,6 +43,10 @@
         </div>
     </div>
 
+    @foreach ($apolices as $apolice)
+       <!-- Exibir detalhes da apólice aqui -->
+   @endforeach
+
     <div class="rodape">
         © 2024 Meet Seguros. Todos os direitos reservados.
     </div>
