@@ -31,10 +31,10 @@ class AdminController extends Controller
     public function atualizarApolice(Request $request, $id)
     {
         $validatedData = $request->validate([
-            // Validação dos campos
             'tipo' => 'required|string',
-            'valor_segurado' => 'required|numeric',
-            'nome_segurado' => 'required|string',
+            'risco_segurado' => 'required|string',
+            'vigencia' => 'required|date',
+            'segurado' => 'required|string',
         ]);
     
         $apolice = Apolice::findOrFail($id);
@@ -45,22 +45,21 @@ class AdminController extends Controller
     
 
     // Novos métodos para gerenciamento de apólices
-
     public function inserirApolice(Request $request)
     {
-        // Validação dos dados da apólice
         $validatedData = $request->validate([
             'tipo' => 'required|string',
-            'valor_segurado' => 'required|numeric',
-            'nome_segurado' => 'required|string',
-            'user_id' => 'required|exists:users,id' // Garanta que este campo está validado
-            // Outras validações conforme necessário
+            'risco_segurado' => 'required|string',
+            'vigencia' => 'required|date',
+            'segurado' => 'required|string',
+            'user_id' => 'required|exists:users,id'
         ]);
-
+    
         Apolice::create($validatedData);
-
+    
         return redirect()->route('admin.painel')->with('success', 'Apólice inserida com sucesso!');
     }
+    
 
     public function uploadPdf(Request $request, $apoliceId)
     {
@@ -113,11 +112,13 @@ class AdminController extends Controller
     }
 
     public function editarApolice($id)
-{
-    $apolice = Apolice::findOrFail($id);
-    // Retorne a view de edição, passando a apólice como dado
-    return view('admin.editarApolice', compact('apolice'));
-}
+    {
+        $apolice = Apolice::findOrFail($id);
+        $user = User::findOrFail($apolice->user_id); // Busca informações do usuário
+    
+        return view('admin.editarApolice', compact('apolice', 'user'));
+    }
+    
 
 
     // Outros métodos conforme necessário

@@ -1,5 +1,3 @@
-{{-- resources/views/admin/painel.blade.php --}}
-
 <head>
     <!-- Outros meta tags e declarações aqui -->
 
@@ -9,10 +7,9 @@
     <!-- Outros scripts e estilos aqui -->
 </head>
 
-
 <x-app-layout>
-    <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+<x-slot name="header">
+        <h2 class="font-semibold text-xl text-gray-800 leading-tight" style="margin-top: 20px;">
             Painel do Administrador
         </h2>
     </x-slot>
@@ -27,41 +24,43 @@
                 <h1>Bem-vindo ao painel do administrador!</h1>
 
                 <!-- Tabela de apólices -->
-                <!-- Tabela de apólices -->
                 <table class="table-auto w-full">
                     <thead>
                         <tr>
-                            <th class="border px-4 py-2">Tipo</th>
-                            <th class="border px-4 py-2">Valor Segurado</th>
-                            <th class="border px-4 py-2">Nome do Segurado</th>
-                            <th class="border px-4 py-2">Ações</th>
+                            <th>Tipo de Seguro</th>
+                            <th>Risco Segurado</th>
+                            <th>Vigência</th>
+                            <th>Segurado</th>
+                            <th>Apólice (PDF)</th>
+                            <th>Ações</th>
                         </tr>
                     </thead>
                     <tbody>
                         @foreach ($apolices as $apolice)
                         <tr>
-    <td class="border px-4 py-2">{{ $apolice->tipo }}</td>
-    <td class="border px-4 py-2">R$ {{ number_format($apolice->valor_segurado, 2, ',', '.') }}</td>
-    <td class="border px-4 py-2">{{ $apolice->nome_segurado }}</td>
-    <td class="border px-4 py-2">
-        @if ($apolice->pdf_path)
-        <a href="{{ asset('storage/' . $apolice->pdf_path) }}" target="_blank">Baixar Apólice</a>
-        @else
-        Nenhuma apólice encontrada
-        @endif
-    </td>
-    <td class="border px-4 py-2">
-        <a href="{{ route('admin.editarApolice', $apolice->id) }}" class="btn btn-primary">Editar</a>
-        <br><br>
-        <a href="{{ route('admin.mostrarUploadPdf', $apolice->id) }}" class="btn btn-secondary">Upload PDF</a>
-        <br><br>
+                            <td>{{ $apolice->tipo }}</td>
+                            <td>{{ $apolice->risco_segurado }}</td>
+                            <td>{{ \Carbon\Carbon::parse($apolice->vigencia)->format('d/m/Y') }}</td>
+                            <td>{{ $apolice->segurado }}</td>
+                            <td>
+                                @if ($apolice->pdf_path)
+                                <a href="{{ asset('storage/' . $apolice->pdf_path) }}" target="_blank">Apólice</a>
+                                @else
+                                Sem documento
+                                @endif
+                            </td>
+                            <td>
+        <a href="{{ route('admin.editarApolice', $apolice->id) }}" class="btn btn-primary btn-acao">Editar</a>
+        <br>
+        <a href="{{ route('admin.mostrarUploadPdf', $apolice->id) }}" class="btn btn-secondary btn-acao">PDF</a>
+        <br>
         <form action="{{ route('admin.excluirApolice', $apolice->id) }}" method="POST" onsubmit="return confirm('Tem certeza que deseja excluir esta apólice?');">
             @csrf
             @method('DELETE')
-            <button type="submit" class="btn btn-danger">Excluir</button>
+            <button type="submit" class="btn btn-danger btn-acao">Excluir</button>
         </form>
     </td>
-</tr>
+                        </tr>
                         @endforeach
                     </tbody>
                 </table>
@@ -69,9 +68,9 @@
         </div>
     </div>
     <div style="position: fixed; bottom: 0; width: 100%; height: 50px; background-color: #333; color: white; text-align: center; line-height: 50px; z-index: 999;">
-    © 2024 Meet Seguros. Todos os direitos reservados.
-</div>
-
-
+        © 2024 Meet Seguros. Todos os direitos reservados.
+    </div>
 </x-app-layout>
-<!-- //C:\laragon\www\public_html\areaDoCliente\resources\views\admin\painel.blade.php -->
+
+
+//C:\laragon\www\public_html\areaDoCliente\resources\views\admin\painel.blade.php

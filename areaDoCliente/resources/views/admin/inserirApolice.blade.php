@@ -12,8 +12,9 @@
                     @csrf
                     <!-- Campos do formulário -->
                     <input type="text" name="tipo" placeholder="Tipo de Seguro" required>
-                    <input type="number" name="valor_segurado" placeholder="Valor Segurado" required>
-                    <input type="text" name="nome_segurado" placeholder="Nome do Segurado" required>
+<input type="text" name="risco_segurado" placeholder="Risco Segurado" required>
+<input type="date" name="vigencia" placeholder="Vigência" required>
+<input type="text" name="segurado" placeholder="Segurado" required>
 
                     <select name="user_id">
        @foreach ($users as $user)
