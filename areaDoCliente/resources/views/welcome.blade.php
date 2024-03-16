@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -68,8 +69,10 @@
         }
 
         .container {
-            padding-top: 50px; /* ajuste de espaço para a barra de cabeçalho fixa */
-            min-height: calc(100vh - 100px); /* subtrai a altura do cabeçalho e do rodapé */
+            padding-top: 50px;
+            /* ajuste de espaço para a barra de cabeçalho fixa */
+            min-height: calc(100vh - 100px);
+            /* subtrai a altura do cabeçalho e do rodapé */
         }
 
         .rodape {
@@ -84,37 +87,40 @@
         }
     </style>
 </head>
+
 <body class="antialiased">
-<div class="cabecalho">
-    @if (Route::has('login'))
+    <div class="cabecalho">
+        @if (Route::has('login'))
         <div>
             @auth
-                <a href="{{ url('/dashboard') }}">Dashboard</a>
+            <a href="{{ url('/dashboard') }}">Dashboard</a>
             @else
-                <a href="{{ route('login') }}" class="botao">Entrar</a>
-                @if (Route::has('register'))
-                    <a href="{{ route('register') }}" class="botao">Registrar</a>
-                @endif
+            <a href="{{ route('login') }}" class="botao">Entrar</a>
+            @if (Route::has('register'))
+            <a href="{{ route('register') }}" class="botao">Registrar</a>
+            @endif
             @endauth
         </div>
-    @endif
-</div>
-
-<div class="container max-w-7xl mx-auto p-6 lg:p-8">
-    <div class="flex justify-center">
-        <img src="{{ asset('images/meet_logo.png') }}" alt="Meet Seguros Logo" class="h-16 w-auto">
+        @endif
     </div>
 
-    <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
-        <!-- Conteúdos e serviços da Meet Seguros -->
-        <!-- Blocos de conteúdo -->
-    </div>
-</div>
+    <div class="container max-w-7xl mx-auto p-6 lg:p-8">
+        <div class="flex justify-center">
+            <img src="{{ asset('images/meet_marca.png') }}" alt="Meet Seguros" class="block h-9 w-auto" />
 
-<div class="rodape">
-    © 2024 Meet Seguros. Todos os direitos reservados.
-</div>
+        </div>
+
+        <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+            <!-- Conteúdos e serviços da Meet Seguros -->
+            <!-- Blocos de conteúdo -->
+        </div>
+    </div>
+
+    <div class="rodape">
+        © 2024 Meet Seguros. Todos os direitos reservados.
+    </div>
 </body>
+
 </html>
 
 

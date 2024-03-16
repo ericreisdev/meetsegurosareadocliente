@@ -10,10 +10,13 @@ class Apolice extends Model
     use HasFactory;
 
     protected $fillable = [
-        // Lista de campos que podem ser atribuídos em massa
-        'tipo', 'valor_segurado', 'nome_segurado', 'user_id' // e outros campos relevantes
+        'tipo', // Tipo de Seguro
+        'risco_segurado', // Risco Segurado
+        'vigencia', // Vigência
+        'segurado', // Nome do Segurado
+        'pdf_path', // Caminho para o PDF
+        'user_id' // ID do usuário associado
     ];
-
     public function user(){
         return $this->belongsTo(User::class);
     }
