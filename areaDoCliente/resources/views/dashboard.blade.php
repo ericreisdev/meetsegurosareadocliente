@@ -1,10 +1,20 @@
+<head>
+    <!-- Outros meta tags e declarações aqui -->
+
+    <!-- Referência ao arquivo CSS -->
+    <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
+    
+    <!-- Outros scripts e estilos aqui -->
+</head>
+
+
 <x-app-layout>
     <x-slot name="header">
-        <div class="cabecalho">
+        <div class="cabecalho" style="background-color: #ef8f24; color: white;"> <!-- Cor do cabeçalho alinhada com a marca -->
             @if (Route::has('login'))
             <div>
                 @auth
-                <a href="{{ url('/dashboard') }}">Dashboard</a>
+                <a href="{{ url('/dashboard') }}" class="botao-dashboard">Dashboard</a> <!-- Botão personalizado para Dashboard -->
                 @else
                 <a href="{{ route('login') }}" class="botao">Entrar</a>
                 @if (Route::has('register'))
@@ -28,7 +38,6 @@
                     <p class="text-gray-600">CPF/CNPJ: {{ Auth::user()->username }}</p>
                     @if(Auth::user()->roles->contains('name', 'admin'))
                     <h3 class="text-lg font-semibold mt-4">Painel de Controle do Administrador</h3>
-                    
                     <a href="{{ route('admin.painel') }}" class="inline-block mt-4 py-2 px-4 bg-primary-orange text-black rounded hover:bg-orange-600 transition-colors duration-300">Gerenciar Apólices</a>
                     @else
                     <h3 class="text-lg font-semibold mt-4">Bem-vindo à sua Área de Cliente</h3>
@@ -38,11 +47,10 @@
             </div>
         </div>
     </div>
-    </div>
 
-    <div style="position: fixed; bottom: 0; width: 100%; height: 50px; background-color: #333; color: white; text-align: center; line-height: 50px; z-index: 999;">
-    © 2024 Meet Seguros. Todos os direitos reservados.
-</div>
+    <div class="rodape" style="background-color: #333; color: white;"> <!-- Rodapé estilizado -->
+        © 2024 Meet Seguros. Todos os direitos reservados.
+    </div>
 </x-app-layout>
 
 

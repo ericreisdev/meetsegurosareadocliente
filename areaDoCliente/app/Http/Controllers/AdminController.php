@@ -13,11 +13,8 @@ class AdminController extends Controller
 
     public function painel()
     {
-        // Buscar todas as apólices
-        $apolices = Apolice::all(); // Ou qualquer outra lógica para buscar as apólices
-
-        // Passar as apólices para a view
-        return view('admin.painel', compact('apolices'));
+        $apolicesPorUsuario = Apolice::with('user')->get()->groupBy('user_id');
+        return view('admin.painel', compact('apolicesPorUsuario'));
     }
 
     // Método para mostrar o formulário de edição de perfil do usuário

@@ -1,5 +1,14 @@
 {{-- resources/views/cliente/apolices.blade.php --}}
 
+<head>
+    <!-- Outros meta tags e declarações aqui -->
+
+    <!-- Referência ao arquivo CSS -->
+    <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
+    
+    <!-- Outros scripts e estilos aqui -->
+</head>
+
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
@@ -10,22 +19,41 @@
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
-                @forelse ($apolices as $apolice)
-                    <div class="p-6">
-                        <h3 class="text-lg font-medium text-gray-900">Apólice: {{ $apolice->tipo }}</h3>
-                        <p>Valor Segurado: R$ {{ number_format($apolice->valor_segurado, 2, ',', '.') }}</p>
-                        <p>Nome do Segurado: {{ $apolice->nome_segurado }}</p>
-                        @if ($apolice->pdf_path)
-                            <a href="{{ asset('storage/' . $apolice->pdf_path) }}" target="_blank">Baixar PDF da Apólice</a>
-                        @else
-                            <p>Nenhum PDF disponível</p>
-                        @endif
-                    </div>
-                @empty
-                    <p>Você não tem apólices cadastradas.</p>
-                @endforelse
+                <table class="table-auto w-full">
+                    <thead>
+                        <tr>
+                            <th>Tipo de Seguro</th>
+                            <th>Risco Segurado</th>
+                            <th>Vigência</th>
+                            <th>Segurado</th>
+                            <th>Apólice (PDF)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @forelse ($apolices as $apolice)
+                            <tr>
+                                <td>{{ $apolice->tipo }}</td>
+                                <td>{{ $apolice->risco_segurado }}</td>
+                                <td>{{ \Carbon\Carbon::parse($apolice->vigencia)->format('d/m/Y') }}</td>
+                                <td>{{ $apolice->segurado }}</td>
+                                <td>
+                                    @if ($apolice->pdf_path)
+                                        <a href="{{ asset('storage/' . $apolice->pdf_path) }}" target="_blank">Baixar PDF</a>
+                                    @else
+                                        Sem documento
+                                    @endif
+                                </td>
+                            </tr>
+                        @empty
+                            <tr>
+                                <td colspan="5">Você não tem apólices cadastradas.</td>
+                            </tr>
+                        @endforelse
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
 </x-app-layout>
+
 <!-- C:\laragon\www\public_html\areaDoCliente\resources\views\cliente\cliente.apolices.blade.php -->
