@@ -6,7 +6,7 @@
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
                     <a href="{{ route('dashboard') }}">
-                    <img src="{{ asset('images/logo.png') }}" alt="Meet Seguros" class="block h-9 w-auto" />
+                    <img src="{{ asset('images/meet_marca.png') }}" alt="Meet Seguros" class="block h-9 w-auto" />
 
 
                     </a>
@@ -17,7 +17,7 @@
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                     <x-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
-                        {{ __('Meet Seguros') }}
+                        {{ __('Home') }}
                     </x-nav-link>
                 </div>
             </div>

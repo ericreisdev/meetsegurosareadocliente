@@ -6,7 +6,7 @@
     display: none;
 }
 
-:root {
+/* :root {
     --primary-orange: #ef8f24;
     --dark-orange: #d86608;
     --custom-yellow: #ffc700;
@@ -15,7 +15,7 @@
     --50-grey: #7f7f7f;
     --70-grey: #4c4c4c;
     /* ... outros estilos ... */
-}
+} */
 
 
 html, body {

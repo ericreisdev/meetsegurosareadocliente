@@ -21,7 +21,7 @@
         <x-banner />
         
 
-        <div class="min-h-screen bg-gray-100">
+        <div class="min-h-screen bg-white">
             @livewire('navigation-menu')
 
             <!-- Page Heading -->

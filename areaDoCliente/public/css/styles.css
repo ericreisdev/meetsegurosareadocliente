@@ -1,9 +1,23 @@
-/* C:\laragon\www\public_html\areaDoCliente\public\css\styles.css */
+
+
+:root {
+    --athens-gray: #e4e4eb;
+    --jaffa: #f07932;
+    --bali-hai: #8292af;
+    --gold-sand: #ebb997;
+    --mandys-pink: #f3d1bc;
+    --petite-orchid: #e0919b;
+    --ziggurat: #b2d1dc;
+    --ziggurat-light: #c4e3e6;
+    --illusion: #f4afcf;
+}
+
+
 
 body {
     font-family: 'Arial', sans-serif;
-    color: #333;
-    background-color: #f8f9fa;
+    color: var(--bali-hai);
+    background-color: white;
     font-size: 120%; /* Aumenta a fonte em 20% */
     margin: 0;
     padding: 0;
@@ -29,30 +43,30 @@ a:hover {
 
 /* Estilo para botões primários com efeito de hover */
 .btn {
-    background-color: #ef8f24; /* Cor primária laranja */
-    color: black;
+    background-color: var(--jaffa);
+    color: white;
 }
 
 .btn:hover {
-    background-color: #d86608; /* Cor laranja escura ao passar o mouse */
+    background-color: var(--gold-sand);
 }
 
 /* Estilo para botões secundários com efeito de hover */
 .btn-secondary {
-    background-color: #ffc700; /* Cor amarela personalizada */
+    background-color: var(--mandys-pink);
 }
 
 .btn-secondary:hover {
-    background-color: #b3a700; /* Cor amarela escura ao passar o mouse */
+    background-color: var(--petite-orchid);
 }
 
 /* Estilo para botões perigosos com efeito de hover */
 .btn-danger {
-    background-color: #f44336; /* Vermelho */
+    background-color: var(--illusion);
 }
 
 .btn-danger:hover {
-    background-color: #d32f2f; /* Vermelho escuro ao passar o mouse */
+    background-color: var(--ziggurat);
 }
 
 .expanded-table {
@@ -67,7 +81,7 @@ a:hover {
 
 
 .rodape {
-    background-color: #333;
+    background-color: var(--bali-hai);
     color: white;
     text-align: center;
     padding: 15px 0;
@@ -75,67 +89,86 @@ a:hover {
     bottom: 0;
     width: 100%;
 }
+
 .table-auto a {
-    color: #007bff; /* Cor azul para links */
+    color: var(--ziggurat-light);
 }
 
 .table-auto a:hover {
-    color: #0056b3; /* Cor mais escura ao passar o mouse */
-    text-decoration: none; /* Remove o sublinhado */
+    color: var(--illusion);
+    text-decoration: none;
 }
 
 .table-auto tbody tr:nth-child(odd) {
-    background-color: #f2f2f2; /* Uma cor de fundo leve para linhas ímpares */
+    background-color: var(--mandys-pink);
 }
 
 .table-auto tbody tr:hover {
-    background-color: #ddd; /* Mudança de cor ao passar o mouse */
+    background-color: var(--ziggurat-light);
 }
 
 .table-auto thead th {
-    background-color: #007bff; /* Cor de fundo azul */
-    color: white; /* Texto branco */
-    padding: 10px 0; /* Mais espaço vertical */
-    border-bottom: 2px solid #0056b3; /* Linha mais grossa embaixo */
+    background-color: var(--jaffa);
+    color: white;
+    padding: 10px 0;
+    border-bottom: 2px solid var(--gold-sand);
 }
 
 .container {
     padding: 20px;
-    background-color: #f8f9fa; /* Cor de fundo mais clara para um design moderno */
+    background-color: white;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    max-width: 100%; /* Ocupa toda a largura */
+    max-width: 100%;
     margin: 40px auto;
+}
 
-
-    input[type=text], input[type=date], select, button {
-        width: 100%;
-        padding: 12px 20px;
-        margin: 8px 0;
-        display: inline-block;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-    }
+input[type=text], input[type=date], select, button {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
     
-    button {
-        width: 100%;
-        background-color: #4CAF50;
-        color: white;
-        padding: 14px 20px;
-        margin: 8px 0;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-    }
+button {{
+    background-color: var(--jaffa);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
     
     button:hover {
         background-color: #45a049;
     }
 
+
+    button:hover {
+        background-color: var(--gold-sand);
+    }
+    
+    .cabecalho {
+        background-color: var(--jaffa);
+        color: white;
+    }
+    
+    .botao-dashboard {
+        background-color: var(--ziggurat-light);
+        color: white;
+        padding: 10px 20px;
+        border-radius: 4px;
+        text-decoration: none;
+        display: inline-block;
+    }
     
 }
 
 
 
-/* C:\laragon\www\public_html\areaDoCliente\public\css\styles.css */
+/* C:\laragon\www\public_html\areaDoCliente\public\css\styles.css
