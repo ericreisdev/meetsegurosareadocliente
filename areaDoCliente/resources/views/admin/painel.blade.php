@@ -4,6 +4,10 @@
     <!-- Referência ao arquivo CSS -->
     <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
     
+ 
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- Outros scripts e estilos aqui -->
 </head>
 
@@ -52,15 +56,23 @@
                                         @endif
                                     </td>
                                     <td>
-                                        <a href="{{ route('admin.editarApolice', $apolice->id) }}" class="btn btn-primary btn-acao">Editar</a>
                                         <br>
-                                        <a href="{{ route('admin.mostrarUploadPdf', $apolice->id) }}" class="btn btn-secondary btn-acao">PDF</a>
-                                        <br>
+                                    <span><a href="{{ route('admin.editarApolice', $apolice->id) }}" class="btn btn-primary btn-acao">
+        <i class="fas fa-edit"></i> <!-- Ícone de Editar -->
+    </a>
+                                        
+                                        <a href="{{ route('admin.mostrarUploadPdf', $apolice->id) }}" class="btn btn-secondary btn-acao">
+        <i class="fas fa-file-pdf"></i> <!-- Ícone de PDF -->
+    </a>
+                                        
                                         <form action="{{ route('admin.excluirApolice', $apolice->id) }}" method="POST" onsubmit="return confirm('Tem certeza que deseja excluir esta apólice?');">
-                                            @csrf
-                                            @method('DELETE')
-                                            <button type="submit" class="btn btn-danger btn-acao">Excluir</button>
-                                        </form>
+        @csrf
+        @method('DELETE')
+        <button type="submit" class="btn btn-danger btn-acao">
+            <i class="fas fa-trash-alt"></i> <!-- Ícone de Excluir -->
+        </button>
+    </form>
+    </span>
                                     </td>
                                 </tr>
                             @endforeach
@@ -78,4 +90,4 @@
 
 
 
-//C:\laragon\www\public_html\areaDoCliente\resources\views\admin\painel.blade.php
+<!-- //C:\laragon\www\public_html\areaDoCliente\resources\views\admin\painel.blade.php -->

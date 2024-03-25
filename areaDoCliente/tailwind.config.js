@@ -21,3 +21,4 @@ export default {
 
     plugins: [forms, typography],
 };
+//C:\laragon\www\public_html\areaDoCliente\tailwind.config.js
