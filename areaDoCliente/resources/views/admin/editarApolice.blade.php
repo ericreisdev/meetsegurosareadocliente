@@ -18,10 +18,10 @@
             @csrf
             @method('PUT')
 
-            <label for="cpf">CPF do Usuário</label>
+            <label for="cpf">CPF do Cliente Titular</label>
             <input type="text" id="cpf" name="cpf" value="{{ $user->username }}" readonly>
 
-            <label for="nome_completo">Nome Completo do Usuário</label>
+            <label for="nome_completo">Nome do Cliente Titular</label>
             <input type="text" id="nome_completo" name="nome_completo" value="{{ $user->full_name }}" readonly>
 
             <!-- Os demais campos do formulário aqui -->
@@ -44,7 +44,7 @@
             <label for="segurado">Nome do Segurado</label>
             <input type="text" id="segurado" name="segurado" value="{{ $apolice->segurado }}">
 
-            <button type="submit">Atualizar Apólice</button>
+            <button type="submit" class="btn btn-primary" style="background-color: var(--jaffa); border-color: var(--gold-sand);">Atualizar Apólice</button>
         </form>
     </div>
 

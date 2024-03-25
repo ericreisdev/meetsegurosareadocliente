@@ -19,17 +19,24 @@
             <div class="bg-white shadow overflow-hidden sm:rounded-lg">
                 <form action="{{ route('admin.inserirApolice') }}" method="POST" class="container">
                     @csrf
+                    <label for="tipo">Tipo de Seguro</label>
                     <input type="text" name="tipo" placeholder="Tipo de Seguro" required class="input">
+                    <label for="risco_segurado">Risco Segurado</label>
                     <input type="text" name="risco_segurado" placeholder="Risco Segurado" required class="input">
+                    <label for="vigencia">Vigência</label>
                     <input type="date" name="vigencia" placeholder="Vigência" required class="input">
+                    <label for="segurado">Nome do Segurado</label>
                     <input type="text" name="segurado" placeholder="Segurado" required class="input">
-
+                    
+                    <label for="user_id">Cliente Titular</label>
                     <select name="user_id" class="input">
                         @foreach ($users as $user)
                             <option value="{{ $user->id }}">{{ $user->full_name }}</option>
                         @endforeach
                     </select>
-                    <button type="submit" class="btn">Salvar Apólice</button>
+                    <br>
+                    <br>
+                    <button type="submit" class="btn btn-primary" style="background-color: var(--jaffa); border-color: var(--gold-sand);">Salvar Apólice</button>
                 </form>
             </div>
         </div>

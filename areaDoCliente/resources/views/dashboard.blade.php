@@ -9,21 +9,17 @@
 
 
 <x-app-layout>
-    <x-slot name="header">
-        <div class="cabecalho" style="background-color: #ef8f24; color: white;"> <!-- Cor do cabeçalho alinhada com a marca -->
-            @if (Route::has('login'))
-            <!-- <div>   
-                @auth
-                <a href="{{ url('/dashboard') }}" class="botao-dashboard">Dashboard</a> 
+<x-slot name="header">
+        <div class="cabecalho" style="background-color: #ef8f24; color: white;">
+            @auth
+                @if(Auth::user()->roles->contains('name', 'admin'))
+                    <h1 class="text-lg font-semibold mt-4">Painel do Administrador</h1>
+                    
                 @else
-                <a href="{{ route('login') }}" class="botao">Entrar</a>
-                @if (Route::has('register'))
-                <a href="{{ route('register') }}" class="botao">Registrar</a>
+                    <h1 class="text-lg font-semibold mt-4">Seu Espaço Pessoal</h1>
+                  
                 @endif
-                @endauth
-            </div> -->
-            <div> <h1 class="text-lg font-semibold mt-4">Painel do Administrador</h1> </div>
-            @endif
+            @endauth
         </div>
     </x-slot>
 
@@ -38,7 +34,7 @@
                     
                     <a href="{{ route('admin.painel') }}" class="inline-block mt-4 py-2 px-4 bg-primary-orange text-black rounded hover:bg-orange-600 transition-colors duration-300">Gerenciar Apólices</a>
                     @else
-                    <h3 class="text-lg font-semibold mt-4">Bem-vindo à sua Área de Cliente</h3>
+                    <h3 class="text-lg font-semibold mt-4">Bem-vindo(a) à sua Área de Cliente</h3>
                     <a href="{{ route('cliente.apolices') }}" class="inline-block mt-4 py-2 px-4 bg-primary-orange text-black rounded hover:bg-orange-600 transition-colors duration-300">Ver Minhas Apólices</a>
                     @endif
     </div>

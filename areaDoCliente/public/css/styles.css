@@ -16,7 +16,7 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    color: var(--bali-hai);
+    color: black;
     background-color: white;
     font-size: 120%; /* Aumenta a fonte em 20% */
     margin: 0;
@@ -63,6 +63,7 @@ a:hover {
 /* Estilo para botões perigosos com efeito de hover */
 .btn-danger {
     background-color: var(--illusion);
+    color: black;
 }
 
 .btn-danger:hover {
@@ -91,7 +92,7 @@ a:hover {
 }
 
 .table-auto a {
-    color: var(--ziggurat-light);
+    color: black;
 }
 
 .table-auto a:hover {
@@ -144,9 +145,7 @@ button {{
 }
 
     
-    button:hover {
-        background-color: #45a049;
-    }
+ 
 
 
     button:hover {
@@ -166,6 +165,69 @@ button {{
         text-decoration: none;
         display: inline-block;
     }
+
+    /* Estilo para botões de ação com fundo branco e texto laranja */
+.btn-acao {
+    background-color: white;
+    color: var(--jaffa); /* Cor laranja já definida */
+    border: 1px solid var(--jaffa); /* Bordas na mesma cor para destaque */
+}
+
+/* Estilo para o hover dos botões de ação */
+.btn-acao:hover {
+    background-color: var(--jaffa); /* Fundo laranja no hover */
+    color: white; /* Texto branco no hover */
+}
+
+/* Estilo para os ícones dentro dos botões */
+.btn-acao i {
+    color: inherit; /* Para garantir que o ícone mude de cor junto com o texto */
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 100%; /* Tamanho da fonte ajustado para telas menores */
+    }
+
+    .container {
+        padding: 10px; /* Padding reduzido para economizar espaço */
+        margin: 20px auto;
+    }
+
+    .table-auto {
+        display: block;
+        overflow-x: auto; /* Adiciona rolagem horizontal */
+        white-space: nowrap; /* Evita que o texto quebre em várias linhas */
+    }
+
+    .table-auto th, .table-auto td {
+        font-size: 90%; /* Reduz o tamanho da fonte para caber mais conteúdo */
+        padding: 8px; /* Espaçamento interno ajustado */
+    }
+
+
+    .btn, .btn-secondary, .btn-danger {
+        padding: 8px 15px; /* Reduz o tamanho do padding dos botões */
+        font-size: 90%; /* Tamanho da fonte dos botões ajustado */
+        min-width: 80px; /* Largura mínima dos botões reduzida */
+        height: 35px; /* Altura dos botões reduzida */
+    }
+
+    .cabecalho, .rodape {
+        padding: 10px 0; /* Padding vertical reduzido para cabeçalho e rodapé */
+        text-align: center; /* Alinhamento centralizado do texto */
+    }
+
+    .btn-acao {
+        font-size: 90%; /* Tamanho da fonte dos botões de ação ajustado */
+        padding: 8px 15px; /* Padding dos botões de ação ajustado */
+    }
+
+    .btn-acao i {
+        font-size: 1em; /* Tamanho do ícone nos botões de ação ajustado */
+    }
+}
+
     
 }
 
