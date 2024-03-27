@@ -71,4 +71,4 @@ class User extends Authenticatable
 }
 
 
-// C:\laragon\www\public_html\areaDoCliente\app\Models\User.php
+// C:\laragon\www\public_html\areaDoCliente\app\Models\User.php 

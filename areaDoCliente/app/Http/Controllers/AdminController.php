@@ -48,14 +48,17 @@ class AdminController extends Controller
             'tipo' => 'required|string',
             'risco_segurado' => 'required|string',
             'vigencia' => 'required|date',
-            'segurado' => 'required|string',
-            'user_id' => 'required|exists:users,id'
+            'user_id' => 'required|exists:users,id' // Verifica se o usuário existe
         ]);
     
-        Apolice::create($validatedData);
+        $apoliceData = $validatedData;
+        $apoliceData['segurado'] = User::findOrFail($validatedData['user_id'])->full_name; // Define o nome do segurado
+    
+        Apolice::create($apoliceData);
     
         return redirect()->route('admin.painel')->with('success', 'Apólice inserida com sucesso!');
     }
+    
     
 
     public function uploadPdf(Request $request, $apoliceId)

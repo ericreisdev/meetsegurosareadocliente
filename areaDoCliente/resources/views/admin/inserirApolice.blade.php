@@ -25,10 +25,9 @@
                     <input type="text" name="risco_segurado" placeholder="Risco Segurado" required class="input">
                     <label for="vigencia">Vigência</label>
                     <input type="date" name="vigencia" placeholder="Vigência" required class="input">
-                    <label for="segurado">Nome do Segurado</label>
-                    <input type="text" name="segurado" placeholder="Segurado" required class="input">
+                  
                     
-                    <label for="user_id">Cliente Titular</label>
+                    <label for="user_id">Nome do Segurado</label>
                     <select name="user_id" class="input">
                         @foreach ($users as $user)
                             <option value="{{ $user->id }}">{{ $user->full_name }}</option>

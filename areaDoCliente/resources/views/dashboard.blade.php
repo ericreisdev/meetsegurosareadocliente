@@ -10,7 +10,7 @@
 
 <x-app-layout>
 <x-slot name="header">
-        <div class="cabecalho" style="background-color: #ef8f24; color: white;">
+        <div class="cabecalho" style="background-color: white; color: black;">
             @auth
                 @if(Auth::user()->roles->contains('name', 'admin'))
                     <h1 class="text-lg font-semibold mt-4">Painel do Administrador</h1>

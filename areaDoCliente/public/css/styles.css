@@ -101,7 +101,7 @@ a:hover {
 }
 
 .table-auto tbody tr:nth-child(odd) {
-    background-color: var(--mandys-pink);
+    background-color: var(--athens-gray);
 }
 
 .table-auto tbody tr:hover {
@@ -122,6 +122,13 @@ a:hover {
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     max-width: 100%;
     margin: 40px auto;
+}
+
+.container-botao {
+    max-width: 100%; /* Largura máxima */
+    padding: 0 15px; /* Adiciona um pouco de preenchimento nas laterais */
+    margin: 30px auto; /* Centraliza e adiciona margem acima e abaixo */
+    margin-left: 90px;
 }
 
 input[type=text], input[type=date], select, button {
@@ -192,6 +199,10 @@ button {{
     .container {
         padding: 10px; /* Padding reduzido para economizar espaço */
         margin: 20px auto;
+    }
+
+    .container-botao {
+        padding: 10px; /* Padding reduzido para economizar espaço em telas menores */
     }
 
     .table-auto {
