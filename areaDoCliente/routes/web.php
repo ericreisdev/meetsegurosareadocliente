@@ -37,7 +37,9 @@
                 Route::put('/admin/atualizar-usuario/{id}', [AdminController::class, 'atualizarUsuario'])->name('admin.atualizarUsuario');
                 // Adicione aqui outras rotas de administração conforme necessário  
 
-
+                Route::get('/register', function () {
+                    return view('auth.register');
+                })->name('register');
 
                 // Rotas para visualização de formulários
                 Route::get('/admin/inserir-apolice', [AdminController::class, 'mostrarInserirApolice'])->name('admin.mostrarInserirApolice');

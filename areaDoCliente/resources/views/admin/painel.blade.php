@@ -18,6 +18,13 @@
         </h2>
     </x-slot>
 
+    @if(Auth::user()->roles->contains('name', 'admin'))
+    <div class="container-botao">
+        <a href="{{ route('register') }}" class="btn">Registrar Novo Usuário</a>
+    </div>
+@endif
+
+
     <div class="container-botao">
         <a href="{{ route('admin.mostrarInserirApolice') }}" class="btn">Inserir Nova Apólice</a>
     </div>

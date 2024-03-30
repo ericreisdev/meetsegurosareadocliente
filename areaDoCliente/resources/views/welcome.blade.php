@@ -97,7 +97,7 @@
             @else
             <a href="{{ route('login') }}" class="botao">Entrar</a>
             @if (Route::has('register'))
-            <a href="{{ route('register') }}" class="botao">Registrar</a>
+            <!-- <a href="{{ route('register') }}" class="botao">Registrar</a> -->
             @endif
             @endauth
         </div>
