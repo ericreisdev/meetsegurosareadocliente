@@ -1,3 +1,18 @@
+<head>
+    <!-- Outros meta tags e declarações aqui -->
+
+    <!-- Referência ao arquivo CSS -->
+    <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
+    
+ 
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Outros scripts e estilos aqui -->
+</head>
+
+
+
 <x-guest-layout>
     <x-authentication-card>
     <x-slot name="logo">
@@ -67,4 +82,4 @@
         </form>
     </x-authentication-card>
 </x-guest-layout>
-<!-- C:\laragon\www\public_html\areaDoCliente\resources\views\auth\register.blade.php -->
+<!-- C:\laragon\www\public_html\areaDoCliente\resources\views\auth\new-register.blade.php -->
