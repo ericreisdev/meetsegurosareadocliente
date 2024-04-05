@@ -1,6 +1,5 @@
 APP_NAME=Meet Seguros
 APP_ENV=production
-APP_KEY=base64:ulBCPjzXqfvDC+zEBj6Vu5twW9qV2b10HgK0nJhtfxk=
 APP_DEBUG=false
 APP_URL=https://meetseguros.com.br
 
