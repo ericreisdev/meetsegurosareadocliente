@@ -6,6 +6,7 @@
 /.idea
 /.vagrant
 /.env
+/.env copy
 /.env.backup
 Homestead.json
 Homestead.yaml
