@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\Apolice;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Validation\Rule;
 
 class AdminController extends Controller
 {
@@ -44,18 +45,35 @@ class AdminController extends Controller
     // Novos métodos para gerenciamento de apólices
     public function inserirApolice(Request $request)
     {
+        $tiposAceitos = [
+            'Automóvel', 'Residencial', 'Vida', 'Saúde', 'Bike', 'Condomínio', 
+            'Moto', 'Máquinas e Equipamentos', 'Celular', 'Equipamentos Portáteis', 
+            'Empresarial', 'Fiança', 'RC Profissional', 'Vida Global', 'Saúde Dental', 
+            'Caminhão', 'Frota', 'Riscos Cibernéticos', 'Outros'
+        ];
+
         $validatedData = $request->validate([
-            'tipo' => 'required|string',
+            'tipo' => ['required', 'string', Rule::in($tiposAceitos)],
             'risco_segurado' => 'required|string',
             'vigencia' => 'required|date',
-            'segurado' => 'required|string',
             'user_id' => 'required|exists:users,id'
         ]);
+
+        $tipo = $request->input('tipo');
+
+        if (!in_array($tipo, $tiposAceitos)) {
+            return redirect()->back()->withErrors(['tipo' => 'Tipo de seguro não permitido.']);
+        }
+
     
-        Apolice::create($validatedData);
+        $apoliceData = $validatedData;
+        $apoliceData['segurado'] = User::findOrFail($validatedData['user_id'])->full_name; // Define o nome do segurado
+    
+        Apolice::create($apoliceData);
     
         return redirect()->route('admin.painel')->with('success', 'Apólice inserida com sucesso!');
     }
+    
     
 
     public function uploadPdf(Request $request, $apoliceId)

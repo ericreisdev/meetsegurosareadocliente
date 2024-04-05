@@ -20,23 +20,28 @@
         });
 
 
+
+       
+
         Route::middleware(['auth:sanctum', 'verified'])->group(function () {
             Route::get('/dashboard', function () {
                 return view('dashboard');
             })->name('dashboard');
 
+            
+
             // Rotas para clientes
             Route::get('/area-do-cliente/perfil', [ClienteController::class, 'perfil'])->name('cliente.perfil');
             Route::get('/area-do-cliente/apolices', [ClienteController::class, 'apolices'])->name('cliente.apolices');
-            
            
+
+
 
             Route::middleware(['isAdmin'])->group(function () {
                 Route::get('/admin/painel', [AdminController::class, 'painel'])->name('admin.painel');
                 Route::get('/admin/editar-usuario/{id}', [AdminController::class, 'editarUsuario'])->name('admin.editarUsuario');
                 Route::put('/admin/atualizar-usuario/{id}', [AdminController::class, 'atualizarUsuario'])->name('admin.atualizarUsuario');
                 // Adicione aqui outras rotas de administração conforme necessário  
-
 
 
                 // Rotas para visualização de formulários
@@ -52,7 +57,6 @@
                 Route::post('/admin/gerenciar-documentos/{apoliceId}', [AdminController::class, 'gerenciarDocumentos'])->name('admin.gerenciarDocumentos');
 
                 Route::put('/admin/atualizar-apolice/{id}', [AdminController::class, 'atualizarApolice'])->name('admin.atualizarApolice');
-
             });
         }); 
         

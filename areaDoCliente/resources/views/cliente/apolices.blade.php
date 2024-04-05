@@ -35,7 +35,7 @@
                                 <td>{{ $apolice->tipo }}</td>
                                 <td>{{ $apolice->risco_segurado }}</td>
                                 <td>{{ \Carbon\Carbon::parse($apolice->vigencia)->format('d/m/Y') }}</td>
-                                <td>{{ $apolice->segurado }}</td>
+                                <td>{{ $apolice->user->full_name }}</td>
                                 <td>
                                     @if ($apolice->pdf_path)
                                         <a href="{{ asset('storage/' . $apolice->pdf_path) }}" target="_blank">Baixar PDF</a>

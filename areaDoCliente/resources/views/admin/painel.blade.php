@@ -18,7 +18,10 @@
         </h2>
     </x-slot>
 
-    <div class="py-12">
+
+        
+
+    <div class="container-botao">
         <a href="{{ route('admin.mostrarInserirApolice') }}" class="btn">Inserir Nova Apólice</a>
     </div>
 
@@ -26,8 +29,7 @@
         <div class="py-12 expanded-table"> 
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                 <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
-                <h1>Titular: {{ $apolices->first()->user->full_name ?? 'Não definido' }} ({{ $apolices->first()->user->username ?? 'Não definido' }})</h1>
-
+               
 
                     <!-- Tabela de apólices para esse usuário -->
                     <table class="table-auto w-full">
@@ -47,7 +49,7 @@
                                     <td>{{ $apolice->tipo }}</td>
                                     <td>{{ $apolice->risco_segurado }}</td>
                                     <td>{{ \Carbon\Carbon::parse($apolice->vigencia)->format('d/m/Y') }}</td>
-                                    <td>{{ $apolice->segurado }}</td>
+                                    <td>{{ $apolice->user->full_name }}</td>
                                     <td>
                                         @if ($apolice->pdf_path)
                                             <a href="{{ asset('storage/' . $apolice->pdf_path) }}" target="_blank">Apólice</a>
